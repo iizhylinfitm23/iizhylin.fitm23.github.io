@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="s1.css">
+  <title>Галерея рецептів</title>
+</head>
+
+<body>
+  <header>
+    <h1>Тортики і тістечка</h1>
+  </header>
+
+  <main>
+    <!-- <div class="card filter-card"> -->
+    <div class="filter-card">
+
+      <div class="slider-container">
+        <label for="minCal">Калорії:</label>
+        <div class="range-slider">
+          <input type="range" min="0" max="1000" value="100" id="minCal" class="slider">
+          <input type="range" min="0" max="1000" value="800" id="maxCal" class="slider">
+          <div class="slider-track"></div>
+        </div>
+        <div class="slider-values">
+          <span id="minValue">100</span> - <span id="maxValue">800</span> ккал
+        </div>
+      </div>
+
+      <input type="radio" name="filter" id="pies">
+      <label for="pies" class="filter-button">Пироги</label>
+
+      <input type="radio" name="filter" id="rolls">
+      <label for="rolls" class="filter-button">Рулети</label>
+
+      <input type="radio" name="filter" id="cheesecakes">
+      <label for="cheesecakes" class="filter-button">Сирники</label>
+
+      <input type="radio" name="filter" id="smallCakes">
+      <label for="smallCakes" class="filter-button">Тістечка</label>
+
+      <input type="radio" name="filter" id="bigCakes">
+      <label for="bigCakes" class="filter-button">Торти</label>
+
+      <input type="radio" name="filter" id="allFood" checked>
+      <label for="allFood" class="filter-button">Скинути фільтр</label>
+    </div>
+
+    <div class="card" data-category="pies">
+      <h3>Пиріг з вишнями</h3>
+      <hr>
+      <p>Старий добрий вишневий пиріг. Ягогди чи варення - вибір за вами.</p>
+      <img src="https://picsum.photos/400/200?random=1" alt="Рецепт 1">
+    </div>
+
+    <div class="card" data-category="rolls">
+      <h3>Рулет "Кларнет"</h3>
+      <hr>
+      <p>Бісквітний рулет з білою шоколадною крихтою.</p>
+      <img src="https://picsum.photos/400/200?random=2" alt="Рецепт 2">
+    </div>
+
+    <div class="card" data-category="cheesecakes">
+      <h3>Творожні сирники</h3>
+      <hr>
+      <p>Смажені творожні сирники з какао або родзинками.</p>
+      <img src="https://picsum.photos/400/200?random=3" alt="Рецепт 3">
+    </div>
+
+    <div class="card" data-category="smallCakes">
+      <h3>Тістечко "Хмарка"</h3>
+      <hr>
+      <p>Повітряне тістечко з ванльним кремом.</p>
+      <img src="https://picsum.photos/400/200?random=4" alt="Рецепт 4">
+    </div>
+
+    <div class="card" data-category="bigCakes">
+      <h3>Торт "Празький"</h3>
+      <hr>
+      <p>Шоколадний торт з кремом та заспиртованими вишнями.</p>
+      <img src="https://picsum.photos/400/200?random=5" alt="Рецепт 5">
+    </div>
+
+    <div class="card" data-category="pies">
+      <h3>Гарбузовий пиріг</h3>
+      <hr>
+      <p>Смачний аж лячно.</p>
+      <img src="https://picsum.photos/400/200?random=6" alt="Рецепт 6">
+    </div>
+
+    <div class="card" data-category="rolls">
+      <h3>Рулет "Золотий ключик"</h3>
+      <hr>
+      <p>Бісквітний рулет на основі молочного крему.</p>
+      <img src="https://picsum.photos/400/200?random=7" alt="Рецепт 7">
+    </div>
+
+    <div class="card" data-category="smallCakes">
+      <h3>Тістечко "Квітка"</h3>
+      <hr>
+      <p>Фруктово-ягідне тістечко на основі пісочного тіста.</p>
+      <img src="https://picsum.photos/400/200?random=8" alt="Рецепт 8">
+    </div>
+
+    <div class="card" data-category="bigCakes">
+      <h3>Торт "Грильяж"</h3>
+      <hr>
+      <p>Горіхово-карамельний торт.</p>
+      <img src="https://picsum.photos/400/200?random=9" alt="Рецепт 9">
+    </div>
+  </main>
+
+  <footer>
+    <p>Контакти:</p>
+    <p>tortik@smakota.ua</p>
+    <p>&copy; 2019 Smakota</p>
+  </footer>
+</body>
+
+</html>
